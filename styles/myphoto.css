@@ -89,21 +89,21 @@ body {
   font-weight: bold;
 }
 
-.navbar-myphoto .navbar-nav > li > a {
+.navbar-myphoto .nav-pills > li > a {
   color: white;
 }
 
-.navbar-myphoto .navbar-nav > li > a:hover {
+.navbar-myphoto .nav-pills > li > a:hover {
   background-color: #2A2A2C;
   color: gray;
 }
 
-.navbar-myphoto .navbar-nav > li > a:focus {
+.navbar-myphoto .nav-pills > li > a:focus {
   background-color: #504747;
   color: gray;
 }
 
-.navbar-myphoto .navbar-nav > li.active > a {
+.navbar-myphoto .nav-pills > li.active > a {
   background-color: #504747;
   color: gray;
 }
@@ -141,10 +141,9 @@ body {
   background-color: grey;
 }
 
-.nav-pills.nav-link.active, .nav-pills.nav-link.active:focus, 
-.nav-pills.nav-link.active:hover,
-.nav-pills.nav-item.open.nav-link,
-.nav-pills.nav-item.open.nav-link:focus,
-.nav-pills.nav-item.open.nav-link:hover {
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover {
   background-color: grey;
 }

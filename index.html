@@ -277,5 +277,20 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="tether/js/tether.min.js"></script>
     <script src="bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("nav div ul li a").on('click', function(evt){
+          // to prevent the on-click event from trickling down to the anchor tag
+          evt.preventDefault();
+
+          var offset = $(this.hash).offset();
+          if(offset){
+            $('body').animate({
+              scrollTop: offset.top
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

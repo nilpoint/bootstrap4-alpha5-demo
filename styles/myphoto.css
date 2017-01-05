@@ -160,3 +160,15 @@ body {
   margin-left: 4em;
   z-index: 3000;
 }
+
+/*
+ * Footer
+*/
+footer p {
+  display: inline;
+  margin-left: 10px;
+}
+
+footer a {
+  color: inherit;
+}

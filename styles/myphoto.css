@@ -159,6 +159,7 @@ body {
   margin-top: 4em;  
   margin-left: 4em;
   z-index: 3000;
+  display: none;
 }
 
 /*

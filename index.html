@@ -67,7 +67,7 @@
         </ul>
       </div>      
     </nav>
-    <div class="alert alert-danger alert-dismissible alert-myphoto">
+    <div id="unsupported-browser-alert" class="alert alert-danger alert-dismissible alert-myphoto">
       <a href="#" class="close" aria-label="close" data-dismiss="alert">&times;</a>
       <strong class="alert-heading"><i class="fa fa-exclamation"></i>Unsupported Browsers</strong> Internet Explorer 8 and lower are not supported by this website.
     </div>
@@ -329,6 +329,7 @@
       <p class="text-muted"><a href="#"><small>About Us</small></a></p>
     </footer>
     <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.browser.min.js"></script>
     <script src="tether/js/tether.min.js"></script>
     <script src="bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -344,6 +345,10 @@
             });
           }
         });
+
+        if ($.browser.msie && $.browser.version <= 8) {
+          $("#unsupported-browser-alert").show();
+        }
       });
     </script>
   </body>

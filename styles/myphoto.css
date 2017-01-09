@@ -157,6 +157,10 @@ body {
   padding-top: 1em;
 }
 
+#services-events-content div {
+  display: none;
+}
+
 /*
  * Dialog
 */

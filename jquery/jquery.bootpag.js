@@ -133,25 +133,25 @@
                 p = ['<ul class="', settings.wrapClass, ' bootpag">'];
 
             if(settings.firstLastUse){
-                p = p.concat(['<li data-lp="1" class="', settings.firstClass,
-                       '"><a href="', href(1), '">', settings.first, '</a></li>']);
+                p = p.concat(['<li data-lp="1" class="page-item ', settings.firstClass,
+                       '"><a class="page-link" href="', href(1), '">', settings.first, '</a></li>']);
             }
             if(settings.prev){
-                p = p.concat(['<li data-lp="1" class="', settings.prevClass,
-                       '"><a href="', href(1), '">', settings.prev, '</a></li>']);
+                p = p.concat(['<li data-lp="1" class="page-item ', settings.prevClass,
+                       '"><a class="page-link" href="', href(1), '">', settings.prev, '</a></li>']);
             }
             for(var c = 1; c <= Math.min(settings.total, settings.maxVisible); c++){
-                p = p.concat(['<li data-lp="', c, '"><a href="', href(c), '">', c, '</a></li>']);
+                p = p.concat(['<li class="page-item" data-lp="', c, '"><a class="page-link" href="', href(c), '">', c, '</a></li>']);
             }
             if(settings.next){
                 lp = settings.leaps && settings.total > settings.maxVisible
                     ? Math.min(settings.maxVisible + 1, settings.total) : 2;
-                p = p.concat(['<li data-lp="', lp, '" class="',
-                             settings.nextClass, '"><a href="', href(lp),
+                p = p.concat(['<li data-lp="', lp, '" class=" page-item ',
+                             settings.nextClass, '"><a class="page-link" href="', href(lp),
                              '">', settings.next, '</a></li>']);
             }
             if(settings.firstLastUse){
-                p = p.concat(['<li data-lp="', settings.total, '" class="last"><a href="',
+                p = p.concat(['<li data-lp="', settings.total, '" class="page-item last"><a class="page-link" href="',
                              href(settings.total),'">', settings.last, '</a></li>']);
             }
             p.push('</ul>');

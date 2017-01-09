@@ -384,6 +384,9 @@
         $('#services-events-pagination').bootpag({
           total: 10
         }).on('page', function(event, num){
+          $('#services-events-content div').hide();
+          var currentPage = "#page-" + num;
+          $(currentPage).show();
         });
       });
     </script>

@@ -149,6 +149,15 @@ body {
 }
 
 /*
+ * Services section
+*/
+
+#services-events .container {
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+/*
  * Dialog
 */
 .alert-myphoto {

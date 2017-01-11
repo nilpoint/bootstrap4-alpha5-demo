@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/4.0.0-alpha.5/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="tether/css/tether.min.css">
     <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.lightbox.css">
     <link rel="stylesheet" type="text/css" href="styles/myphoto.css">
   </head>
   <body data-spy="scroll" data-target=".navbar">
@@ -98,7 +99,9 @@
                   <div id="page-1">
                     <h3>My Sample Event #1</h3> 
                     <p>
-                      <img src="images/event1.jpg" alt="Event Cover" width="80" height="45" align="lfet">
+                      <span class="thumbnails" data-toggle="lightbox">
+                        <img src="images/event1.jpg" alt="Event Cover" width="80" height="45" class="img-thumbnail" data-target="images/event1.jpg" align="lfet">
+                      </span>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Curabitur leo dolor, fringilla vel lacus at, auctor finibus ipsum. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Morbi quis arcu lorem. Vivamus elementum convallis enim sagittis tincidunt. Nunc feugiat mollis risus non dictum. 
                       Nam commodo necsapien a vestibulum. Duis et tellus cursus, laoreet ante non, mollis sem. Nullam vulputate justo nisi, sit amet bibendum ligula varius id.
@@ -109,7 +112,9 @@
 
                     <h3>My Sample Event #2</h3> 
                     <p>
-                      <img src="images/event2.jpg" alt="Event Cover" width="80" height="45" align="left">
+                      <span class="thumbnails" data-toggle="lightbox">
+                        <img src="images/event2.jpg" alt="Event Cover" width="80" height="45" class="img-thumbnail" data-target="images/event2.jpg" align="left">
+                      </span>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Curabitur leo dolor, fringilla vel lacus at, auctor finibus ipsum. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Morbi quis arcu lorem. Vivamus elementum convallis enim sagittis tincidunt. Nunc feugiat mollis risus non dictum. 
                       Nam commodo necsapien a vestibulum. Duis et tellus cursus, laoreet ante non, mollis sem. Nullam vulputate justo nisi, sit amet bibendum ligula varius id.
@@ -121,10 +126,12 @@
                   <div id="page-2">
                     <h3>My Sample Event #3</h3> 
                     <p>
-                      <img src="images/event3.jpg" alt="Event Cover" width="80" height="45" align="left">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur leo dolor, fringilla vel lacus at, auctor finibus ipsum. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Morbi quis arcu lorem. Vivamus elementum convallis enim sagittis tincidunt. Nunc feugiat mollis risus non dictum. 
-                    Nam commodo necsapien a vestibulum. Duis et tellus cursus, laoreet ante non, mollis sem. Nullam vulputate justo nisi, sit amet bibendum ligula varius id.
+                      <span class="thumbnails" data-toggle="lightbox">
+                        <img src="images/event3.jpg" alt="Event Cover" width="80" height="45" class="img-thumbnail" data-target="images/event3.jpg" align="left">
+                      </span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur leo dolor, fringilla vel lacus at, auctor finibus ipsum. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Morbi quis arcu lorem. Vivamus elementum convallis enim sagittis tincidunt. Nunc feugiat mollis risus non dictum. 
+                      Nam commodo necsapien a vestibulum. Duis et tellus cursus, laoreet ante non, mollis sem. Nullam vulputate justo nisi, sit amet bibendum ligula varius id.
                     </p>
                   </div>
                 </div>
@@ -369,6 +376,7 @@
     <script src="jquery/jquery.bootpag.js"></script>
     <script src="tether/js/tether.min.js"></script>
     <script src="bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.lightbox.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $("nav div ul li a").on('click', function(evt){

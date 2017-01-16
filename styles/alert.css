@@ -17,3 +17,15 @@
 .alert-position#unsupported-browser-alert {
   display: none;
 }
+
+.alert-minimize {
+  width: 70px;
+}
+
+.alert-minimize * {
+  display: none;
+}
+
+.alert-minimize .close {
+  display: block;
+}
